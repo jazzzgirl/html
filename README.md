@@ -1,5 +1,5 @@
-# html
-<h2> 웹제작 01분반 깃허브 주소 </h2>
+# 웹제작 01분반
+<h2> 깃허브 주소 </h2>
 강동민 : https://github.com/kang-dongmin <br>
 구민수 : https://github.com/westerdif<br>
 김경현 : https://github.com/GaengSSeu04<br>
