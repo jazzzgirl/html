@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>표 만들기 - 김지연</title>
+    </head>
+    <body>
+        <h1>2줄 3칸 기본 표 만들기</h1>
+        <table border="1" width="50%">
+            <!-- 1번 줄 -->
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <!-- 2번 줄 -->
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h1>표에 제목 셀 만들기</h1>
+        <table border="1" width="100%">
+            <tr>
+                <th>학과</th>
+                <td>컴퓨터공학부</td>
+            </tr>
+            <tr>
+                <th>학번</th>
+                <td>202395000</td>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td>김지연</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h1>셀 합치기 - 3줄 4칸 표</h1>
+        <table border="1" width="100%">
+            <tr>
+                <td colspan="3">1,2,3</td>
+                <td rowspan="3">4, 8, 12</td>
+            </tr>
+            <tr>
+                <td rowspan="2">5, 9</td>
+                <td>6</td>
+                <td>7</td>
+                
+            </tr>
+            <tr>
+                
+                <td>10</td>
+                <td>11</td>
+                
+            </tr>
+        </table>
+    </body>
+</html>
