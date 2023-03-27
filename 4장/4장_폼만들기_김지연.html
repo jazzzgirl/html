@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4장 폼 만들기 - 김지연</title>
+    </head>
+    <body>
+        <h1>사용자 입력을 위한 폼</h1>
+        <form name="myForm" method="get" action="result.html">
+            이름 : <input type="text">
+            <hr>
+            <fieldset>
+                <legend>필수 입력</legend>
+                [이름] : <input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요." autofocus required>
+                <br>
+                <label for="user_pwd">[비밀번호]</label>
+                <input type="password" name="user_pwd" id="user_pwd" maxlength="12">
+            </fieldset>
+
+            <br><br>
+            <fieldset>
+                <legend>선택 입력</legend>
+                [학년] : 
+                <input type="radio" name="grade" id="grade1" value="1학년" checked> 1학년
+                <input type="radio" name="grade" id="grade2" value="2학년"> 2학년
+                
+                <input type="radio" name="grade" id="grade3" value="3학년"> 
+                <label for="grade3">3학년</label>
+                
+                <input type="radio" name="grade" id="grade4" value="4학년"> 
+                <label for="grade4">4학년</label>
+
+                <br><br>
+
+                [신청 과목] :
+                <input type="checkbox" name="ck_c" id="ck_c" value="C Program">
+                <label for="ck_c">C언어</label>
+                <input type="checkbox" name="ck_python" id="ck_python" value="python">
+                <label for="ck_python">파이썬</label>
+
+                <label>
+                    <input type="checkbox" name="ck_web" id="ck_web" value="WebProgram"> 웹제작
+                </label>
+                <label>
+                    <input type="checkbox" name="ck_sw" id="ck_sw" value="SWProgram"> S/W 프로그래밍
+                </label>
+
+                <br><br>
+
+                <label for="grade">[학년] : </label>
+                <select name="grade" id="grade">
+                    <option value="1">1학년</option>
+                    <option value="2">2학년</option>
+                    <option value="3">3학년</option>
+                    <option value="4" selected>4학년</option>
+                </select>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>분화된 텍스트 필드</legend>
+                <label for="user_search">[검색] : </label>
+                <input type="search" name="user_search" id="user_search"><br>
+                <br>
+
+                <label for="user_url">[홈페이지 주소] : </label>
+                <input type="url" name="user_url" id="user_url">
+                <br>
+
+                <label for="user_mail">[E-mail] : </label>
+                <input type="email" name="user_mail" id="user_mail">
+                <br>
+
+                <label for="user_tel">[전화번호] : </label>
+                <input type="tel" name="user_tel" id="user_tel">
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>기타</legend>
+                <label for="user_num">주문 개수</label>
+                <input type="number" name="user_num" id="user_num" min="1" max="100" value="1">
+                <br>
+                1 <input type="range" name="user_ran" id="user_ran" min="1" max="5" value="1"> 5
+
+                <br>
+
+                <label for="user_date">[제출일] : </label>
+                <input type="date" name="user_date" id="user_date">
+                <br>
+
+                <label for="user_time">[제출 시간] : </label>
+                <input type="time" name="user_t
+                ime" id="user_time" value="09:00">
+                <br>
+
+                <label for="user_color">[선호 색상] : </label>
+                <input type="color" name="user_color" id="user_color">
+                <br>
+
+                <label for="user_info">[자기 소개] : </label>
+                <textarea name="user_info" id="user_info" cols="30" rows="5"></textarea>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>버튼</legend>
+                <input type="submit" value="전송">
+                <input type="reset" value="다시 입력">
+                <br><br>
+
+                <input type="button" value="컴퓨터공학부" onclick="javascript:window.open('https://computer.silla.ac.kr')">
+                <br><br>
+
+                <input type="hidden" name="emailchk" value="N">
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
