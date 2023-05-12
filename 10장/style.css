@@ -1,0 +1,85 @@
+/* 문서 전체 글꼴은 맑은 고딕. 바깥 여백 5 */
+* {
+    font-family: "맑은 고딕";
+    margin: 5px;
+}
+
+/* header, footer - 안쪽 여백 20, 배경 색상, 가운데 정렬 */
+header, footer {
+    padding: 20px;
+    background-color: skyblue;
+    text-align: center;
+}
+
+/* nav - 배경색, 가운데 정렬, 글자크기 18, 진하게, 안쪽 여백 20 */
+nav {
+    background-color: pink;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* 하이퍼링트 - 밑줄 없음, 가로 길이 100, 세로길이 30, 안쪽 여백 10 */
+nav a {
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+
+a:link, a:visited {
+    color:black;
+}
+
+a:hover, a:active {
+    color: white;
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+/* section - 배경 색상, 테두리, 가로 길이 48%, 높이 200, 왼쪽 플로트 설정*/
+section {
+    background-color: rgb(39, 214, 54);
+    border: 3px solid gray;
+    width: 48%;
+    height: 200px;
+    float: left;
+}
+
+/* footer clear 적용*/
+footer {
+    clear: both;
+}
+
+/* 각 section 의 제목 글자 색상과 여백 동일 */
+.c1 {
+    color: white;
+    padding: 10px;
+}
+
+/* 각 section 의 제목의 배경 색상은 각각 다르게 설정 */
+#s1 > h1 {
+    background-color: coral;
+}
+
+#s2 > h1 {
+    background-color: rgb(88, 35, 16);
+}
+
+#s3 > h1 {
+    background-color: rgb(26, 140, 155);
+}
+
+#s4 > h1 {
+    background-color: rgb(52, 4, 61);
+}
+
+#s5 > h1 {
+    background-color: rgb(143, 23, 97);
+}
+
+#s6 > h1 {
+    background-color: rgb(59, 3, 3);
+}

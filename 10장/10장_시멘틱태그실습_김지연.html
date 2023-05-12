@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>10장 시멘틱 태그 - 김지연</title>
+        
+        <!-- 외부 스타일 연결 -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/02_semantic.png">
+        </header>
+
+        <nav>
+            <a href="#s1">[&lt;header&gt;]</a>
+            <a href="#s2">[&lt;nav&gt;]</a>
+            <a href="#s3">[&lt;section&gt;]</a>
+            <a href="#s4">[&lt;article&gt;]</a>
+            <a href="#s5">[&lt;aside&gt;]</a>
+            <a href="#s6">[&lt;footer&gt;]</a>
+        </nav>
+
+        <!-- header 설명 -->
+        <section id="s1">
+            <h1 class="c1">Header</h1>
+            <article>
+                <ul>
+                    <li>페이지나 섹션의 머리말 표현</li>
+                    <ol>
+                        <li>페이지 제목</li>
+                        <li>페이지 소개</li>
+                    </ol>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Nav 설명 -->
+        <section id="s2">
+            <h1 class="c1">Nav</h1>
+            <article>                
+                <ol>
+                    <li>하이퍼링크들을 모아 놓은 특별한 섹션</li>
+                    <li>페이지 내 목차를 만드는 용도</li>
+                </ol>
+            </article>
+        </section>
+
+        <!-- Section 설명 -->
+        <section id="s3">
+            <h1 class="c1">Section</h1>
+            <article>                
+                <ul>
+                    <li>문서의 장(chapter, secction) 혹은 절을 구성하는 역할</li>
+                    <li>일반 문서에 여라 장이 있듯이 웹 페이지에 여러 section 가능</li>
+                    <li>제목 태그를 사용하여 절 혹은 섹션의 주제 기입</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Article 설명 -->
+        <section id="s4">
+            <h1 class="c1">Article</h1>
+            <article>                
+                <ul>
+                    <li>본문과 연관 있지만, 독립적인 콘텐츠를 담는 영역</li>
+                    <li>혹은 보조기사, 블로그 포스트, 댓글 등 기타 독립적인 내용</li>
+                    <li>article 에 담는 내용이 많은 경우 여러 section에 둘 수 있음</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Aside 설명 -->
+        <section id="s5">
+            <h1 class="c1">Aside</h1>
+            <article>                
+                <ul>
+                    <li>본문에서 약간 벗어난 노트나 팁</li>
+                    <li>신문, 잡지에서 주요 기사 옆 관련 기사, 삽입 어구로 표시된 논평 등</li>
+                    <li>페이지의 오른쪽이나 왼쪽에 주로 배치</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Footer 설명 -->
+        <section id="s6">
+            <h1 class="c1">Footer</h1>
+            <article>                
+                <ul>
+                    <li>꼬리말 영역, 주로 저자나 저작권 정보 표시</li>
+                </ul>
+            </article>
+        </section>
+
+        <aside></aside>
+
+        <footer>
+            &copy; 신라대학교 컴퓨터공학부 웹제작 수업자료
+        </footer>
+    </body>
+</html>
