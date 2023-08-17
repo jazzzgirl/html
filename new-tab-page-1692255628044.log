@@ -1,0 +1,17 @@
+function displayFav(first, ...favs) {
+    let str = `가장 좋아하는 과일은 "${first}" 군요.`;
+    return str;
+}
+undefined
+console.log(displayFav("사과","딸기","포도"));
+VM441:1 가장 좋아하는 과일은 "사과" 군요.
+undefined
+
+function displayFav(first, ...favs) {
+    let str = `가장 좋아하는 과일은 "${favs}" 군요.`;
+    return str;
+}
+undefined
+console.log(displayFav("사과","딸기","포도"));
+VM632:1 가장 좋아하는 과일은 "딸기,포도" 군요.
+undefined
